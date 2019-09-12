@@ -1,6 +1,6 @@
 # LSBench (Linked Stream Benchmark)
 
-Our Linked Stream Benchmark (LSBench)[1] published in an ISWC paper 2012 [2] has been used in several very recent ICDE[3], SIGMOD[4] and EDBT[5] papers related to streaming graphs, so, we have decided to put some resources in developing and maintaining the source code. If you need a direct support for LSBench, don't hesitate to contact me or create an issue in this directory.
+Our Linked Stream Benchmark (LSBench)[1] published in an ISWC paper 2012 [2] has been used in several very recent ICDE[3], SIGMOD[4] and EDBT[5] papers related to streaming graphs, so, we have decided to put some resources in developing and maintaining the source code. This is the placeholder for the next release. If you need a direct support for LSBench, don't hesitate to contact me or create an issue in this repository.
 
 # The upcoming tasks we are developing:
 

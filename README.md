@@ -16,16 +16,10 @@ Our Linked Stream Benchmark (LSBench)[1] published in an ISWC paper 2012 [2] has
 
 [1] Linked Stream Benchmark code repository on Google Code. https://lnkd.in/d5reE2h
 
-[2] Linked Stream Data Processing Engines:
+[2] Linked Stream Data Processing Engines: Facts and Figures. https://lnkd.in/dG3Wp9t
 
-Facts and Figures. https://lnkd.in/dG3Wp9t
-
-[3]Time Constrained Continuous Subgraph Search over
-
-Streaming Graphs. https://lnkd.in/dticbuQ
+[3]Time Constrained Continuous Subgraph Search over Streaming Graphs. https://lnkd.in/dticbuQ
 
 [4] TurboFlux: A Fast Continuous Subgraph Matching System for Streaming Graph Data. https://lnkd.in/dRwNjMD
 
-[5] A Selectivity based approach to Continuous Pattern
-
-Detection in Streaming Graphs. https://lnkd.in/dunV7PK
+[5] A Selectivity based approach to Continuous Pattern Detection in Streaming Graphs. https://lnkd.in/dunV7PK

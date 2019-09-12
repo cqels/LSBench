@@ -7,7 +7,7 @@ Our Linked Stream Benchmark (LSBench)[1] published in an ISWC paper 2012 [2] has
 - [ ] Synchronize with Data Generator of LDBC Social Network Benchmark 
 - [ ] Dockerise
 - [ ] Support other Formats
-- [ ] Support Reasoning Features ( e.g. integrate with LUBM/UOBM ontology generator)
+- [ ] Support Stream Reasoning Features ( e.g. integrate with LUBM/UOBM ontology generator)
 - [ ] Create Adapter to SUMO (traffic simulation engine) to simulate GPS coordinates with Open Street Maps 
 - [ ] Build The Test Drive for Websocket and MQTT
 

@@ -13,7 +13,7 @@ Our Linked Stream Benchmark (LSBench)[1] published in an ISWC paper 2012 [2] has
 
 
 # References: 
-[1] Linked Stream Benchmark [code repository on Google Code] (https://lnkd.in/d5reE2h) is now migrated to this repository ([source code](./main/) and [the generator](./releases/)).
+[1] Linked Stream Benchmark [code repository on Google Code] (https://lnkd.in/d5reE2h) is now migrated to this repository ([source code](./main/) and [the data generator](./releases/)).
 
 [2] Danh Le-Phuoc, Minh Dao-Tran, Minh-Duc Pham, Peter Boncz, Thomas Eiter and Michael Fink. Linked Stream Data Processing Engines: Facts and Figures.ISWC 2012.  https://lnkd.in/dG3Wp9t
 

@@ -1,0 +1,25 @@
+
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix dc: <http://purl.org/dc/elements/1.1/>
+prefix sioc: <http://rdfs.org/sioc/ns#>
+prefix sib: <http://www.ins.cwi.nl/sib/vocabulary/>
+prefix sibu: <http://www.ins.cwi.nl/sib/user/> 
+
+SELECT ?friend (count(?friendposttag) as ?numTag)
+WHERE
+{
+        ?user foaf:knows ?friend.
+        FILTER (?user = %user%).
+        ?user sioc:creator_of ?userpost.
+        ?userpost a sioc:Post.
+        ?userpost sib:tag ?tag.
+
+        ?friend sioc:creator_of ?friendpost.
+        ?friendpost a sioc:Post.
+        ?friendpost sib:tag ?friendposttag
+        FILTER (str(?friendposttag) = str(?tag))
+
+}
+GROUP BY ?friend
+ORDER BY DESC(?numTag)
+LIMIT 10

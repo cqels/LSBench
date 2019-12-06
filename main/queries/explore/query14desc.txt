@@ -1,0 +1,4 @@
+QueryType=Select
+
+60daysbefore=Before60Days
+30daysbefore=Before30Days

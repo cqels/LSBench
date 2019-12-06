@@ -1,0 +1,32 @@
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix dc: <http://purl.org/dc/elements/1.1/>
+prefix sioc: <http://rdfs.org/sioc/ns#>
+prefix sib: <http://www.ins.cwi.nl/sib/vocabulary/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?post ?content
+WHERE
+{
+        ?post a sib:Post.
+        ?post dc:created ?createdDate.
+        FILTER (xsd:dateTime(?createdDate) > %10recentday%).
+        {
+                {
+                        {
+                        ?post sioc:content ?content.
+                        ?post sib:tag ?tag.
+                        FILTER (?tag = %tag%)
+                        }
+                        UNION
+                        {
+
+                        ?post sioc:content ?content.
+                        FILTER (
+                                regex(?content, %tag%)
+                        )
+                        }
+                }
+        }
+
+}
+

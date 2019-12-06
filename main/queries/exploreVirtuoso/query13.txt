@@ -1,0 +1,45 @@
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix sib: <http://www.ins.cwi.nl/sib/vocabulary/>
+prefix sibu: <http://www.ins.cwi.nl/sib/user/>
+prefix sioc: <http://rdfs.org/sioc/ns#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?user1  count(?interest1) as ?count
+WHERE {
+        ?user0 sioc:account_of ?person0.
+        ?user1 sioc:account_of ?person1.
+
+        ?user0 sib:interest ?interest0.
+        ?user1 sib:interest ?interest1.
+        FILTER(?interest0 = ?interest1).
+
+        ?person0 foaf:based_near ?location0.
+        ?person1 foaf:based_near ?location1.
+        FILTER (?location0 = ?location1).
+
+        ?person0 foaf:gender ?gender0.
+        ?person1 foaf:gender ?gender1.
+        FILTER (?gender0 = ?gender1).
+
+        ?person1 foaf:birthday ?birthday.
+        FILTER (xsd:date(?birthday) > %30yearsago% && xsd:date(?birthday) < %20yearsago% ).
+
+        FILTER (
+                !bif:exists
+                (
+                        (
+                        SELECT *
+                        WHERE
+                        {
+                                ?user0 foaf:knows ?user1
+                        }
+                        )
+                )
+        ).
+
+        FILTER (?user0 != ?user1).
+        FILTER (?user0 = %user%).
+}
+GROUP BY ?user1
+ORDER BY DESC(?count)
+LIMIT 10

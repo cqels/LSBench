@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Tue Apr 17 14:49:02 CEST 2012
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=sibMRgenerator.jar
+manifest.mergeall=true
+manifest.mainclass=sib.generator.MapReduceGenerator
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=

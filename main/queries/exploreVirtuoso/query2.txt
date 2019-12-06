@@ -1,0 +1,15 @@
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix sib: <http://www.ins.cwi.nl/sib/vocabulary/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?name1 ?name2 ?institute1
+WHERE {
+        ?person1 foaf:lastName ?name1.
+        ?person1 sib:class_year ?classyear1.
+        ?person2 foaf:lastName ?name2.
+        ?person2 sib:class_year ?classyear2.
+        ?person1 foaf:organization ?institute1.
+        ?person2 foaf:organization ?institute2.
+        FILTER (xsd:date(?classyear1) = xsd:date(?classyear2)).
+        FILTER (?institute1 = ?institute2)
+} LIMIT 100

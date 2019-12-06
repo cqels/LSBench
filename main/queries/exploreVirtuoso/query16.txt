@@ -1,0 +1,16 @@
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix dc: <http://purl.org/dc/elements/1.1/>
+prefix sioc: <http://rdfs.org/sioc/ns#>
+prefix sib: <http://www.ins.cwi.nl/sib/vocabulary/>
+prefix sibu: <http://www.ins.cwi.nl/sib/user/> 
+
+SELECT ?user ?friend count(?photo) as ?numPhoto
+WHERE
+{
+        ?user foaf:knows ?friend.
+        FILTER (?user = %user%).
+        ?photo sib:tag ?user.
+        ?photo sib:tag ?friend.
+}
+GROUP BY ?user ?friend
+ORDER BY DESC(?numPhoto)

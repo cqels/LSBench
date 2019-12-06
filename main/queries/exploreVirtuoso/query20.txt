@@ -1,0 +1,20 @@
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix dc: <http://purl.org/dc/elements/1.1/>
+prefix sioc: <http://rdfs.org/sioc/ns#>
+prefix sib: <http://www.ins.cwi.nl/sib/vocabulary/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?location count(?user) as ?numuser
+WHERE
+{
+        ?person foaf:based_near ?location.
+        ?user sioc:account_of ?person.
+        ?user dc:date ?joindate.
+        FILTER (xsd:dateTime(?joindate) > %recentdate%).
+}
+
+GROUP BY ?location
+
+ORDER BY DESC(?numuser)
+
+LIMIT 10

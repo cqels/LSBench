@@ -1,0 +1,27 @@
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix dc: <http://purl.org/dc/elements/1.1/>
+prefix sioc: <http://rdfs.org/sioc/ns#>
+prefix sib: <http://www.ins.cwi.nl/sib/vocabulary/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT count(?user)
+WHERE
+{
+        ?user dc:date ?createdDate.
+        FILTER (xsd:dateTime(?createdDate) < %60daysbefore%).
+        FILTER (
+                !bif:exists
+                (
+                        (
+                        SELECT *
+                        WHERE
+                        {
+                                ?user sioc:creator_of ?post.
+                                ?post dc:created ?postdate.
+                                FILTER (xsd:dateTime(?postdate) > %30daysbefore%)
+                        }
+                        )
+                )
+        ).
+
+}

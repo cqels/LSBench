@@ -1,0 +1,5 @@
+sib:trackedAt
+sib:trackedTime
+sib:trackedLocation
+dbpprop:latd
+dbpprop:longd

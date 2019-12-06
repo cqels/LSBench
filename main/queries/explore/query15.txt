@@ -1,0 +1,15 @@
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix sioc: <http://rdfs.org/sioc/ns#>
+prefix sib: <http://www.ins.cwi.nl/sib/vocabulary/>
+prefix sibp: <http://www.ins.cwi.nl/sib/person/>
+
+SELECT DISTINCT ?photo
+WHERE {
+        ?photo a sib:Photo.
+        ?user1 sioc:account_of %person%.
+        ?photo sib:tag ?user1.
+        ?user1 foaf:knows ?user2.
+        ?photoalbum sioc:container_of ?photo.
+        ?user2 sioc:creator_of ?photoalbum
+}
+LIMIT 100

@@ -1,0 +1,31 @@
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix sioc: <http://rdfs.org/sioc/ns#>
+prefix sibp: <http://www.ins.cwi.nl/sib/person/>
+prefix dbp: <http://dbpedia.org/resource/> 
+
+SELECT DISTINCT ?user1 ?user2 ?dist
+
+WHERE {
+	{
+	        {?user1 foaf:knows ?user2}
+                UNION
+                {?user1 foaf:knows ?friend.
+                ?friend foaf:knows ?user2}
+                UNION
+		{
+		?user1 foaf:knows ?friend.
+                ?friend foaf:knows ?friend2.
+		?friend2 foaf:knows ?user2}
+	}
+
+        ?person1 foaf:lastName ?name1.
+        FILTER (?person1 = %person%).
+        ?user1 sioc:account_of ?person1.
+
+        ?person2 foaf:lastName ?name2.
+        ?user2 sioc:account_of ?person2.
+        ?person2 foaf:based_near %location%
+}
+ORDER BY ?dist
+
+LIMIT 10

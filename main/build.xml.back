@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project SocialGraph with Jar-in-Jar Loader">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <property name="src.dir"     value="src"/>
+
+    <property name="build.dir"   value="build"/>
+    <property name="classes.dir" value="bin"/>
+
+
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="${classes.dir}"/>
+        <javac srcdir="${src.dir}" destdir="${classes.dir}">
+	      	<classpath>
+			<pathelement path="${classpath}"/>
+      			<fileset dir="lib">
+        			<include name="**/*.jar"/>
+      			</fileset>
+      		</classpath>
+	</javac>
+    </target>	
+    <target name="create_run_jar" depends="compile">
+        <jar destfile="sibMRgenerator.jar">
+            <manifest>
+                <attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader"/>
+                <attribute name="Rsrc-Main-Class" value="sib.generator.MapReduceGenerator"/>
+                <attribute name="Class-Path" value="."/>
+                <attribute name="Rsrc-Class-Path" value="./ jdom.jar log4j-1.2.12.jar ssj.jar hadoop-core-0.20.205.0.jar hadoop-tools-0.20.205.0.jar"/>
+            </manifest>
+            <zipfileset src="jar-in-jar-loader.zip"/>
+            <fileset dir="bin"/>
+            <zipfileset dir="lib" includes="jdom.jar"/>
+            <zipfileset dir="lib" includes="log4j-1.2.12.jar"/>
+            <zipfileset dir="lib" includes="ssj.jar"/>
+            <zipfileset dir="lib" includes="hadoop-core-0.20.205.0.jar"/>
+            <zipfileset dir="lib" includes="hadoop-tools-0.20.205.0.jar"/>
+        </jar>
+    </target>
+</project>

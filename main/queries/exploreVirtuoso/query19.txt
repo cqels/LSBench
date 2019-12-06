@@ -1,0 +1,18 @@
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix dc: <http://purl.org/dc/elements/1.1/>
+prefix sioc: <http://rdfs.org/sioc/ns#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?location count(?post) as ?numPost
+WHERE
+{
+        ?person foaf:based_near ?location.
+        ?user sioc:account_of ?person.
+        ?user sioc:moderator_of ?forum.
+        ?forum sioc:container_of ?post.
+        ?post dc:created ?postdate.
+        FILTER (xsd:dateTime(?postdate) > %recentdate%)
+
+}
+GROUP BY ?location ORDER BY DESC(?numPost)
+LIMIT 10

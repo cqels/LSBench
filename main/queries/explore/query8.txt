@@ -1,0 +1,26 @@
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix sib: <http://www.ins.cwi.nl/sib/vocabulary/>
+prefix dbpprop: <http://dbpedia.org/property/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix sioc: <http://rdfs.org/sioc/ns#>
+prefix sibg: <http://www.ins.cwi.nl/sib/group/>
+
+SELECT *
+WHERE
+{
+        {
+                SELECT ?user0 (count(*) as ?count)
+                WHERE {
+                        ?user0 foaf:knows ?friend.
+                        ?group sioc:has_member ?friend.
+                        FILTER (?group = %group%).
+                        FILTER (
+				not exists { ?group sioc:has_member ?user0 }
+                        ).
+
+                }
+                GROUP BY ?user0
+        }
+        FILTER (?count > 4)
+
+}

@@ -1,0 +1,9 @@
+Average coefficient of the social graph: 0.12914727019941702
+Writing the data for test driver 
+Number of popular users 13725
+Average path length = 11.188984370643608
+Radius of the social graph = 5  from ( 0 , 3871 )
+Degree of the starting node is 50
+Writing the data for test driver 
+Number of popular users 13725
+

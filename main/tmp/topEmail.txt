@@ -1,0 +1,5 @@
+gmail.com 0.45
+gmx.com 0.20
+yahoo.com 0.18
+hotmail.com 0.07
+zoho.com 0.06

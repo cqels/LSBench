@@ -1,0 +1,52 @@
+Heap size at tihe beginning 
+ ---------------------- 
+ Current Heap Size: 239
+ Max Heap Size: 3557
+ Free Heap Size: 235
+ ---------------------- 
+Building locations dictionary 
+
+New storage manager: 0_mr0_userProf.ser
+New storage manager: 1_mr0_userProf.ser
+New storage manager: 2_mr0_userProf.ser
+Pass 0 Total 49429 friendships generated
+Friendship generation in pass 0 takes 0 minutes and 1 seconds
+Size of file is 7555639
+Freemem is 231237576
+Totalmem is 317063168
+Block size is 115618788
+End of file --- 
+created 1 tmp files
+Done sorting for 1 pass!!! ==> output file /export/scratch2/duc/work/SIB/workspace/SocialGraph/outputDir/1_mr0_userProf.ser.sorted
+Push gabage collection after each sorting 
+ ---------------------- 
+ Current Heap Size: 449
+ Max Heap Size: 3557
+ Free Heap Size: 401
+ ---------------------- 
+Sort in pass 1 takes 0 minutes and 2 seconds
+Pass 1 Total 99251 friendships generated
+Friendship generation in pass 1 takes 0 minutes and 1 seconds
+Size of file is 12930760
+Freemem is 323481352
+Totalmem is 471662592
+Block size is 161740676
+End of file --- 
+created 1 tmp files
+Done sorting for 2 pass!!! ==> output file /export/scratch2/duc/work/SIB/workspace/SocialGraph/outputDir/2_mr0_userProf.ser.sorted
+Push gabage collection after each sorting 
+ ---------------------- 
+ Current Heap Size: 455
+ Max Heap Size: 3557
+ Free Heap Size: 395
+ ---------------------- 
+Sort in pass 2 takes 0 minutes and 4 seconds
+Pass 2 Total 173164 friendships generated
+Friendship generation in pass 2 takes 0 minutes and 5 seconds
+ ---------------------- 
+ Current Heap Size: 455
+ Max Heap Size: 3557
+ Free Heap Size: 167
+ ---------------------- 
+Number of serialized objects: 10000
+Generating the posts & comments 

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+basedir=${0%/*}
+. ${basedir}/classpath.sh
+
+cmd="java -Xmx16000M -XX:-UseGCOverheadLimit sib.generator.ScalableGenerator $@"
+
+#cmd="java -Xmx512M -XX:-UseGCOverheadLimit sib.generator.ScalableGenerator $@"
+
+echo $cmd
+eval $cmd

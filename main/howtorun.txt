@@ -1,0 +1,25 @@
+1) For generating the dataset
+
+./sibgenerator -size <number_of_users> 
+
+The number_of_users can be 10000, 20000, 40000,.... Note that, for 10000 users social network, the generated dataset will contain about 125 million triples.
+
+For example: ./sibgenerator -size 10000
+
+Many other options can be used. For example, -maxFr <max_number_of_friends>.
+
+2) For running test driver
+
+./sibtestdriver -seed <seed_value> -uc queries/<user_case> -runs <number_of_querymix_runs> -w <number_of_warmups> -mt <number_of_threads> -o <out_put_file> <SPARQL_ENDPOINT>
+
+For example: 
+
+ -runs <number_of_querymix_runs> -w <number_of_warmups> -mt <number_of_threads> -o <out_put_file> <SPARQL_ENDPOINT>
+
+For example: 
+
+./sibtestdriver -seed <seed_value> -uc queries/<user_case> -runs <number_of_querymix_runs> -w <number_of_warmups> -mt <number_of_threads> -o <out_put_file> <SPARQL_ENDPOINT>
+
+./sibtestdriver -seed 9834533 -uc queries/exploreVirtuoso -runs 10 -w 4 -mt 4 -o virtuoso.results_explore.xml http://localhost:8892/sparql
+
+(The options of the testdriver are almost the same as those of the BIBM testdriver)

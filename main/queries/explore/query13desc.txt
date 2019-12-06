@@ -1,0 +1,5 @@
+QueryType=Select
+
+30yearsago=30YearsAgo
+20yearsago=20YearsAgo
+user=UserURI

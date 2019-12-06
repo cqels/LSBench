@@ -1,0 +1,20 @@
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix sioc: <http://rdfs.org/sioc/ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX yago: <http://dbpedia.org/class/yago/>
+PREFIX sibp: <http://www.ins.cwi.nl/sib/person/> 
+
+SELECT DISTINCT ?name2 ?eurocountryName  
+WHERE {
+        %person% foaf:lastName ?name1.
+        ?user1 sioc:account_of %person%.
+        ?user1 foaf:knows ?user2.
+        ?user2 sioc:account_of ?person2.
+        ?person2 foaf:lastName ?name2.
+        ?person2 foaf:based_near ?location2.
+        ?eurocountry rdf:type yago:EuropeanCountries.
+        ?eurocountry rdfs:label ?eurocountryName.
+        FILTER regex(?location2,?eurocountryName)
+} 
+LIMIT 100

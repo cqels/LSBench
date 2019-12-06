@@ -1,0 +1,9 @@
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT DISTINCT ?name ?lastname ?institute  
+WHERE {
+        ?person foaf:organization ?institute.
+        ?person foaf:firstName ?name.
+        ?person foaf:lastName ?lastname.
+        FILTER regex(?lastname, %randomName%,"i")
+}

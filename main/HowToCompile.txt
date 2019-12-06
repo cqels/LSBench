@@ -1,0 +1,20 @@
+1) Set CLASSPATH
+
+export CLASSPATH=./bin/:./lib/sib.jar:./lib/ssj.jar:./lib/jdom.jar:./lib/log4j-1.2.12.jar
+
+2) Compile
+
+javac -sourcepath src src/sib/generator/ScalableGenerator.java -d bin/
+
+
+3) Generate the dataset by running the script sibgenerator
+
+./sibgenerator
+
+
+Parameters for the data generator can be found in params.ini. By now, three options have been tried for generating the dataset.
+(1) numtotalUser: 20000 & numFiles: 20
+(1a) numtotalUser: 20000 & numFiles: 10
+(2) numtotalUser: 10000 & numFiles: 10 
+(3) numtotalUser: 5000 & numFiles: 4
+

@@ -1,0 +1,20 @@
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix sib: <http://www.ins.cwi.nl/sib/vocabulary/>
+prefix dbpprop: <http://dbpedia.org/property/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix sibu: <http://www.ins.cwi.nl/sib/user/> 
+
+SELECT ?friendOfFriend (count(*) as ?count)
+WHERE {
+        ?user0 foaf:knows ?friend.
+        ?friend foaf:knows ?friendOfFriend.
+        FILTER (
+		not exists { ?user0 foaf:knows ?friendOfFriend }
+        ).
+        FILTER (?user0 != ?friendOfFriend).
+        FILTER (?user0 = %user%).
+
+}
+GROUP BY ?friendOfFriend
+ORDER BY DESC(?count)
+LIMIT 10

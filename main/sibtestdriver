@@ -1,0 +1,9 @@
+#!/bin/bash
+
+basedir=${0%/*}
+. ${basedir}/classpath.sh
+
+cmd="java -Xmx256M sib.testdriver.TestDriver $@"
+
+echo $cmd
+eval $cmd

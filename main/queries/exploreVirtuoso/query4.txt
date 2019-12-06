@@ -1,0 +1,16 @@
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix sib: <http://www.ins.cwi.nl/sib/vocabulary/>
+prefix dbpprop: <http://dbpedia.org/property/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix sibu: <http://www.ins.cwi.nl/sib/user/>
+
+SELECT DISTINCT ?singerName
+WHERE {
+        %user% foaf:knows ?friend.
+        ?friend sib:interest ?interest.
+        ?show dbpprop:showName ?showname.
+        ?show dbpprop:presenter ?singer.
+        ?singer rdfs:label ?singerName.
+        FILTER regex(?showname, "American Music Awards").
+        FILTER (str(?singerName) = str(?interest))
+}

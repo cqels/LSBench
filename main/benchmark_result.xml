@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<bdsm version="SIB Test Driver 0.9">
+  <querymix>
+     <date>Fri Jun 01 11:00:10 CEST 2012</date>
+     <scalefactor>0.0</scalefactor>
+     <exploreEndpoint>http://localhost:8892/sparql</exploreEndpoint>
+     <updateEndpoint>http://localhost:8892/sparql</updateEndpoint>
+     <usecase>/export/scratch2/duc/repositories/sibstream/SocialGraph/./queries/exploreVirtuoso</usecase>
+     <drilldown>off</drilldown>
+     <warmups>2</warmups>
+     <seed>9834500</seed>
+     <querymixruns>3</querymixruns>
+     <minquerymixruntime>0.0000</minquerymixruntime>
+     <maxquerymixruntime>0.0710</maxquerymixruntime>
+     <elapsedruntime>0.074</elapsedruntime>
+     <qmph>145547.286</qmph>
+     <cqet>0.024</cqet>
+     <cqetg>0.000</cqetg>
+     <aqetg>0.071</aqetg>
+     <throughput>0.000</throughput>
+     <power>0.000</power>
+  </querymix>
+  <queries>
+    <query nr="1">
+      <executecount>1</executecount>
+      <timeshare>100.000</timeshare>
+      <aqet>0.071000</aqet>
+      <aqetg>0.071000</aqetg>
+      <qps>14.085</qps>
+      <minqet>0.071000</minqet>
+      <maxqet>0.071000</maxqet>
+      <avgresults>1.000</avgresults>
+      <minresults>1</minresults>
+      <maxresults>1</maxresults>
+      <timeoutcount>0</timeoutcount>
+    </query>
+  </queries>
+</bdsm>

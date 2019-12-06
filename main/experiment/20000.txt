@@ -1,0 +1,8 @@
+Average coefficient of the social graph: 0.13174981525932813
+Min of max = 4
+Diameter of the social graph = 5  from ( 25 , 10754 )
+Sum all path length = 1280260346
+Average path length = 3.200810905545277
+Radius of the social graph = 4  from ( 0 , 74 )
+Degree of the starting node is 50
+

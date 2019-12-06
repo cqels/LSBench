@@ -1,0 +1,29 @@
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix sioc: <http://rdfs.org/sioc/ns#>
+prefix sibp: <http://www.ins.cwi.nl/sib/person/>
+
+SELECT DISTINCT ?user1 ?user2 ?institute1 ?dist
+
+WHERE {
+        {
+                SELECT ?user1 ?user2
+                WHERE{
+                        ?user1 foaf:knows ?user2
+                }
+        }
+        OPTION ( TRANSITIVE, t_distinct, t_in(?user1), t_out(?user2),
+                t_min (0), t_step ('step_no') as ?dist ).
+
+        ?person1 foaf:lastName ?name1.
+        FILTER (?person1 = %person%).
+        ?person1 foaf:organization ?institute1.
+        ?user1 sioc:account_of ?person1.
+
+        ?person2 foaf:lastName ?name2.
+        ?person2 foaf:organization ?institute2.
+        ?user2 sioc:account_of ?person2.
+        FILTER (?institute1 = ?institute2)
+}
+ORDER BY ?dist
+
+LIMIT 10

@@ -20,5 +20,5 @@ Our Linked Stream Benchmark (LSBench)[1] published in an ISWC paper 2012 [2] has
 [3]Youhuan Li ; Lei Zou ; M. Tamer Özsu ; Dongyan Zhao. ICDE 2019.  Time Constrained Continuous Subgraph Search over Streaming Graphs. https://lnkd.in/dticbuQ
 
 [4] Kyoungmin Kim, In Seo, Wook-Shin Han, Jeong-Hoon Lee, Sungpack Hong, Hassan Chafi, Hyungyu Shin, and Geonhwa Jeong. SIGMOD 2018. TurboFlux: A Fast Continuous Subgraph Matching System for Streaming Graph Data. https://lnkd.in/dRwNjMD
-
+[5] Yunhao Zhang, Rong Chen, and Haibo Chen. 2017. Sub-millisecond Stateful Stream Querying over Fast-evolving Linked Data. In Proceedings of the 26th Symposium on Operating Systems Principles (SOSP '17). https://dl.acm.org/citation.cfm?id=3132777
 [5] Sutanay Choudhury, Lawrence Holder, George Chin, Khushbu Agarwal, John Feo. EDBT 2015. A Selectivity based approach to Continuous Pattern Detection in Streaming Graphs. https://lnkd.in/dunV7PK

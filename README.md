@@ -1,6 +1,6 @@
 # LSBench (Linked Stream Benchmark)
 
-Our Linked Stream Benchmark (LSBench)[1] published in an ISWC paper 2012 [2] has been used in several very recent ICDE[3], SIGMOD[4,7] SOSP[5] and EDBT[6] papers related to streaming graphs, so, we have decided to put some resources in developing and maintaining the source code. This is the placeholder for the next release. If you need a direct support for LSBench, don't hesitate to contact me or create an issue in this repository.
+Our Linked Stream Benchmark (LSBench)[1] published in an ISWC paper 2012 [2] has been used in several very recent ICDE[3], SIGMOD[4,7] SOSP[5], VLDB[8] and EDBT[6] papers related to streaming graphs, so, we have decided to put some resources in developing and maintaining the source code. This is the placeholder for the next release. If you need a direct support for LSBench, don't hesitate to contact me or create an issue in this repository.
 
 # The upcoming tasks we are developing:
 
@@ -26,3 +26,7 @@ Our Linked Stream Benchmark (LSBench)[1] published in an ISWC paper 2012 [2] has
 [6] Sutanay Choudhury, Lawrence Holder, George Chin, Khushbu Agarwal, John Feo. EDBT 2015. A Selectivity based approach to Continuous Pattern Detection in Streaming Graphs. https://lnkd.in/dunV7PK
 
 [7] Anil Pacaci, Angela Bonifati, and M. Tamer Özsu. 2020. Regular Path Query Evaluation on Streaming Graphs. In Proceedings of the 2020 ACM SIGMOD International Conference on Management of Data (SIGMOD '20). Association for Computing Machinery, New York, NY, USA, 1415–1430. DOI:https://doi.org/10.1145/3318464.3389733
+[8] Symmetric Continuous Subgraph Matching with Bidirectional Dynamic Programming
+Seunghwan Min, Sung Gwan Park, Kunsoo Park, Dora Giammarresi, Giuseppe F. Italiano, Wook-shin Han
+http://www.vldb.org/pvldb/vol14/p1298-han.pdf (VLDB 2021)
+

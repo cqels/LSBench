@@ -17,7 +17,7 @@ Our Linked Stream Benchmark (LSBench)[1] published in an ISWC paper 2012 [2] has
 
 [2] Danh Le-Phuoc, Minh Dao-Tran, Minh-Duc Pham, Peter Boncz, Thomas Eiter and Michael Fink. Linked Stream Data Processing Engines: Facts and Figures.ISWC 2012.  https://lnkd.in/dG3Wp9t
 
-[3]Youhuan Li ; Lei Zou ; M. Tamer Özsu ; Dongyan Zhao. ICDE 2019.  Time Constrained Continuous Subgraph Search over Streaming Graphs. https://lnkd.in/dticbuQ
+[3]Youhuan Li ; Lei Zou ; M. Tamer Özsu ; Dongyan Zhao. ICDE 2019.  Time Constrained Continuous Subgraph Search over Streaming Graphs. https://lnkd.in/dticbuQ , source code : https://github.com/pkumod/timingsubg
 
 [4] Kyoungmin Kim, In Seo, Wook-Shin Han, Jeong-Hoon Lee, Sungpack Hong, Hassan Chafi, Hyungyu Shin, and Geonhwa Jeong. SIGMOD 2018. TurboFlux: A Fast Continuous Subgraph Matching System for Streaming Graph Data. https://lnkd.in/dRwNjMD
 
@@ -29,6 +29,6 @@ Our Linked Stream Benchmark (LSBench)[1] published in an ISWC paper 2012 [2] has
 
 [8] Symmetric Continuous Subgraph Matching with Bidirectional Dynamic Programming
 Seunghwan Min, Sung Gwan Park, Kunsoo Park, Dora Giammarresi, Giuseppe F. Italiano, Wook-shin Han
-http://www.vldb.org/pvldb/vol14/p1298-han.pdf (VLDB 2021)
+http://www.vldb.org/pvldb/vol14/p1298-han.pdf (VLDB 2021), source code: https://github.com/SNUCSE-CTA/SymBi
 
 [9] Chi Thang Duong, Trung Dung Hoang, Hongzhi Yin, Matthias Weidlich, Quoc Viet Hung Nguyen, and Karl Aberer. 2021. Efficient streaming subgraph isomorphism with graph neural networks. Proc. VLDB Endow. 14, 5 (January 2021), 730–742. DOI:https://doi.org/10.14778/3446095.3446097

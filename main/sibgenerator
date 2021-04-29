@@ -3,7 +3,11 @@
 basedir=${0%/*}
 . ${basedir}/classpath.sh
 
-cmd="java -Xmx16000M -XX:-UseGCOverheadLimit sib.generator.ScalableGenerator $@"
+# create outputDir if not exists
+[ ! -d outputDir ] && mkdir outputDir
+
+# use legacy sorting for backward compability with pre java 8 comparators
+cmd="java -Djava.util.Arrays.useLegacyMergeSort=true -Xmx16000M -XX:-UseGCOverheadLimit sib.generator.ScalableGenerator $@"
 
 #cmd="java -Xmx512M -XX:-UseGCOverheadLimit sib.generator.ScalableGenerator $@"
 

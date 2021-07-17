@@ -26,9 +26,11 @@ Our Linked Stream Benchmark (LSBench)[1] published in an ISWC paper 2012 [2] has
 [6] Sutanay Choudhury, Lawrence Holder, George Chin, Khushbu Agarwal, John Feo. EDBT 2015. A Selectivity based approach to Continuous Pattern Detection in Streaming Graphs. https://lnkd.in/dunV7PK
 
 [7] Anil Pacaci, Angela Bonifati, and M. Tamer Özsu. 2020. Regular Path Query Evaluation on Streaming Graphs. In Proceedings of the 2020 ACM SIGMOD International Conference on Management of Data (SIGMOD '20). Association for Computing Machinery, New York, NY, USA, 1415–1430. DOI:https://doi.org/10.1145/3318464.3389733, source code https://github.com/dsg-uwaterloo/s-graffito
+
 [8] Symmetric Continuous Subgraph Matching with Bidirectional Dynamic Programming
 Seunghwan Min, Sung Gwan Park, Kunsoo Park, Dora Giammarresi, Giuseppe F. Italiano, Wook-shin Han
 http://www.vldb.org/pvldb/vol14/p1298-han.pdf (VLDB 2021), source code: https://github.com/SNUCSE-CTA/SymBi
 
 [9] Chi Thang Duong, Trung Dung Hoang, Hongzhi Yin, Matthias Weidlich, Quoc Viet Hung Nguyen, and Karl Aberer. 2021. Efficient streaming subgraph isomorphism with graph neural networks. Proc. VLDB Endow. 14, 5 (January 2021), 730–742. DOI:https://doi.org/10.14778/3446095.3446097
+
 [10] Anil Pacaci, M. Tamer Özsu. Experimental Analysis of Streaming Algorithms forGraph Partitioning. SIGMOD 2019. https://cs.uwaterloo.ca/~apacaci/papers/sigmod19_sgp_authorcopy.pdf, source code : https://github.com/dsg-uwaterloo/s-graffito

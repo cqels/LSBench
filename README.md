@@ -31,6 +31,6 @@ Our Linked Stream Benchmark (LSBench)[1] published in an ISWC paper 2012 [2] has
 Seunghwan Min, Sung Gwan Park, Kunsoo Park, Dora Giammarresi, Giuseppe F. Italiano, Wook-shin Han
 http://www.vldb.org/pvldb/vol14/p1298-han.pdf (VLDB 2021), source code: https://github.com/SNUCSE-CTA/SymBi
 
-[9] Chi Thang Duong, Trung Dung Hoang, Hongzhi Yin, Matthias Weidlich, Quoc Viet Hung Nguyen, and Karl Aberer. 2021. Efficient streaming subgraph isomorphism with graph neural networks. Proc. VLDB Endow. 14, 5 (January 2021), 730–742. DOI:https://doi.org/10.14778/3446095.3446097
+[9] Chi Thang Duong, Trung Dung Hoang, Hongzhi Yin, Matthias Weidlich, Quoc Viet Hung Nguyen, and Karl Aberer. 2021. Efficient streaming subgraph isomorphism with graph neural networks. Proc. VLDB Endow. 14, 5 (January 2021), 730–742. DOI:https://doi.org/10.14778/3446095.3446097, source code https://github.com/graphretrieval/ESSIso
 
 [10] Anil Pacaci, M. Tamer Özsu. Experimental Analysis of Streaming Algorithms forGraph Partitioning. SIGMOD 2019. https://cs.uwaterloo.ca/~apacaci/papers/sigmod19_sgp_authorcopy.pdf, source code : https://github.com/dsg-uwaterloo/s-graffito

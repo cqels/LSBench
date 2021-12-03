@@ -34,3 +34,5 @@ http://www.vldb.org/pvldb/vol14/p1298-han.pdf (VLDB 2021), source code: https://
 [9] Chi Thang Duong, Trung Dung Hoang, Hongzhi Yin, Matthias Weidlich, Quoc Viet Hung Nguyen, and Karl Aberer. 2021. Efficient streaming subgraph isomorphism with graph neural networks. Proc. VLDB Endow. 14, 5 (January 2021), 730–742. DOI:https://doi.org/10.14778/3446095.3446097, source code https://github.com/graphretrieval/ESSIso
 
 [10] Anil Pacaci, M. Tamer Özsu. Experimental Analysis of Streaming Algorithms forGraph Partitioning. SIGMOD 2019. https://cs.uwaterloo.ca/~apacaci/papers/sigmod19_sgp_authorcopy.pdf, source code : https://github.com/dsg-uwaterloo/s-graffito
+
+[11] Youhuan Li; Lei Zou; M. Tamer Ozsu; Dongyan Zhao. Space-Efficient Subgraph Search over Streaming Graph with Timing Order Constraint https://ieeexplore.ieee.org/document/9248627

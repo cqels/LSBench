@@ -36,3 +36,5 @@ http://www.vldb.org/pvldb/vol14/p1298-han.pdf (VLDB 2021), source code: https://
 [10] Anil Pacaci, M. Tamer Özsu. Experimental Analysis of Streaming Algorithms forGraph Partitioning. SIGMOD 2019. https://cs.uwaterloo.ca/~apacaci/papers/sigmod19_sgp_authorcopy.pdf, source code : https://github.com/dsg-uwaterloo/s-graffito
 
 [11] Youhuan Li; Lei Zou; M. Tamer Ozsu; Dongyan Zhao. Space-Efficient Subgraph Search over Streaming Graph with Timing Order Constraint https://ieeexplore.ieee.org/document/9248627
+
+[11] Anil Pacaci, Angela Bonifati, M. Tamer Özsu. Evaluating Complex Queries on Streaming Graphs, ICDE 2022. https://arxiv.org/abs/2101.12305

@@ -38,5 +38,6 @@ http://www.vldb.org/pvldb/vol14/p1298-han.pdf (VLDB 2021), source code: https://
 [11] Youhuan Li; Lei Zou; M. Tamer Ozsu; Dongyan Zhao. Space-Efficient Subgraph Search over Streaming Graph with Timing Order Constraint https://ieeexplore.ieee.org/document/9248627
 
 [12] Anil Pacaci, Angela Bonifati, M. Tamer Özsu. Evaluating Complex Queries on Streaming Graphs, ICDE 2022. https://arxiv.org/abs/2101.12305
+
 [13].Lefteris Zervakis, Vinay Setty, Christos Tryfonopoulos, Katja Hose. EDBT 2020. Efficient Continuous Multi-Query Processing over Graph Streams. https://arxiv.org/abs/1902.05134
 

@@ -40,4 +40,5 @@ http://www.vldb.org/pvldb/vol14/p1298-han.pdf (VLDB 2021), source code: https://
 [12] Anil Pacaci, Angela Bonifati, M. Tamer Özsu. Evaluating Complex Queries on Streaming Graphs, ICDE 2022. https://arxiv.org/abs/2101.12305
 
 [13].Lefteris Zervakis, Vinay Setty, Christos Tryfonopoulos, Katja Hose. EDBT 2020. Efficient Continuous Multi-Query Processing over Graph Streams. https://arxiv.org/abs/1902.05134
+[14] Bucchi, Marco ; Grez, Alejandro ; Quintana, Andrés ; Riveros, Cristian ; Vansummeren, StijnCORE: a Complex Event Recognition Engine. https://arxiv.org/abs/2111.04635. source code: https://github.com/CORE-cer/CORE
 

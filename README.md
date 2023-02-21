@@ -45,3 +45,4 @@ http://www.vldb.org/pvldb/vol14/p1298-han.pdf (VLDB 2021), source code: https://
 
 [15] Qianzhen Zhang, Deke Guo, Xiang Zhao, and Lailong Luo. 2022. Handling RDF Streams: Harmonizing Subgraph Matching, Adaptive Incremental Maintenance, and Matching-free Updates Together. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management (CIKM '22). https://dl.acm.org/doi/pdf/10.1145/3511808.3557342
 
+[16] Shixuan Sun, Xibo Sun, Bingsheng He, and Qiong Luo. 2022. RapidFlow: an efficient approach to continuous subgraph matching. Proc. VLDB Endow. 15, 11 (July 2022), 2415–2427. https://doi.org/10.14778/3551793.3551803 

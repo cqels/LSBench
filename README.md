@@ -43,5 +43,5 @@ http://www.vldb.org/pvldb/vol14/p1298-han.pdf (VLDB 2021), source code: https://
 
 [14] Bucchi, Marco ; Grez, Alejandro ; Quintana, Andrés ; Riveros, Cristian ; Vansummeren, StijnCORE: a Complex Event Recognition Engine. https://arxiv.org/abs/2111.04635. source code: https://github.com/CORE-cer/CORE
 
-[14] Qianzhen Zhang, Deke Guo, Xiang Zhao, and Lailong Luo. 2022. Handling RDF Streams: Harmonizing Subgraph Matching, Adaptive Incremental Maintenance, and Matching-free Updates Together. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management (CIKM '22). https://dl.acm.org/doi/pdf/10.1145/3511808.3557342
+[15] Qianzhen Zhang, Deke Guo, Xiang Zhao, and Lailong Luo. 2022. Handling RDF Streams: Harmonizing Subgraph Matching, Adaptive Incremental Maintenance, and Matching-free Updates Together. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management (CIKM '22). https://dl.acm.org/doi/pdf/10.1145/3511808.3557342
 
